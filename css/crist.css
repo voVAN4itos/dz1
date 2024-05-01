@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  img {
+    display: grid;
+    margin: 0 auto;
+    max-width: 30%;
+    height: auto;
+  }
+  
+  p {
+    text-align: justify;
+    color: rgb(0, 0, 0);
+  }
+  a {
+    color: rgb(236, 109, 59);
+    padding: 15px;
+  }
