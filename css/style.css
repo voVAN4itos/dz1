@@ -1,0 +1,398 @@
+body {
+    height: 1080px;
+    width: 1920px;
+    background-color: #0A0E16;
+    overflow: hidden;
+}
+
+html {
+    height: 1080px;
+    width: 1920px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Отступ внутри контейнера */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Отступ между логотипом и названием компании */
+    border-radius: 25px;
+    margin-left: 42px;
+}
+
+.company-name {
+    color: #ffffff; /* Цвет текста */
+    font-size: 20px;
+}
+
+header {
+    width: 1640px;
+    height: 100px;
+    margin-left: 280px;
+    display: flex;
+    background: #131A28;
+    border-bottom:2px solid #ffffff ;
+    position: absolute;
+}
+
+.menu {
+    width: 87px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 38px;
+}
+
+
+
+.menu h3 {
+    width: 87px;
+    height: 37px;
+    margin-top: 14px;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px; /* Установите необходимый отступ снизу для h3 */
+}
+
+.menu h2 {
+    width: 68px;
+    height: 18px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 0; /* Убедитесь, что отступ сверху для h2 минимален */
+    margin-left: 11px ;
+}
+
+.searh111 {
+width: 300px;
+height: 51px;
+margin-top:21px ;
+margin-left: 53px;
+}
+
+input {
+width: 300px;
+height: 51px;
+border-radius: 25px;
+border: 2px solid #B601FE;
+background:#131A28 ;
+color: #622B67;
+font-size: 20px;
+
+}
+
+@keyframes rgb-border {
+    0% { border-color: rgb(129, 58, 58); }
+    33% { border-color: rgb(25, 69, 151); }
+    66% { border-color: rgb(163, 196, 18); }
+    100% { border-color: rgb(69, 12, 83); }
+  }
+  
+  input {
+    animation: rgb-border 3s linear infinite; /* Применяем анимацию */
+    padding-left:20px;
+    
+  }
+
+  input:focus {
+    border: 2px solid #B601FE; /* Устанавливаем тот же цвет границы, что и в обычном состоянии */
+    outline: none; /* Убираем стандартный контур фокуса */
+  }
+
+.hellobut {
+    width: 200px;
+    height: 45px;
+    margin-top: 28px;
+    margin-left: 931px;
+}
+
+.rightbut {
+    padding: 10px 20px;
+    background: linear-gradient(-75deg, #FF00F5, #131A28) ; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста на кнопке */
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px; 
+    text-align:center
+}
+
+.hellobut .rightbut {
+    transition: box-shadow 0.3s, transform 0.3s; /* Добавляем плавность анимации */
+}
+
+.hellobut .rightbut:hover {
+    box-shadow: 0 0 30px #74daf3; /* Добавляем свечение вокруг кнопки */
+    transform: scale(1.05); /* Увеличиваем кнопку на 5% */
+}
+
+.left-bar {
+    width: 280px;
+    height: 1080px;
+    position: absolute;
+    border-right: 3px solid #ffffff;
+    background: #1B1523;
+    z-index: 10; /* Устанавливаем z-index выше, чем у footer */
+}
+
+.left-bar .gor-line {
+    height: 2px; /* Высота линии */
+    background: linear-gradient(30deg, #622B67,#FF00F5 ) ; /* Второй цвет, например, синий */
+    margin-left: 15px; /* Отступ слева */
+    margin-right: 22px; /* Отступ справа */
+    margin-top: 25px;
+}
+
+@keyframes rgb-line {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .left-bar .gor-line {
+    background: linear-gradient(90deg, rgb(129, 58, 58), rgb(25, 69, 151), rgb(163, 196, 18), rgb(69, 12, 83));
+    background-size: 400% 400%;
+    animation: rgb-line 5s ease infinite;
+  }
+
+.left-bar button:focus {
+    background-color: #4C536D; /* Цвет фона для выбранной кнопки */
+    color: #ffffff; /* Цвет текста для выбранной кнопки */
+    outline: none; /* Убираем стандартный контур фокуса */
+    
+}
+
+.left-bar button:hover {
+    box-shadow: 0 0 50px 0 rgba(177, 16, 83, 0.7); 
+    transition: box-shadow 0.3s ease-in-out; /* Плавное появление и исчезновение свечения */
+}
+
+
+.but1 button {
+    width: 280px;
+    height: 50px;
+    margin-top: 87px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;    
+ }
+.but2 button {
+        width: 280px;
+        height: 50px;
+        color: #ffffff;
+        background-color: transparent; 
+        padding: 10px 20px;
+        transition: background-color 0.3s; /* Плавное изменение фона */
+        border: transparent;
+        cursor: pointer;     
+ }
+ .but3 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;     
+}  
+.but4 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;     
+}  
+.but5 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;     
+}  
+.but6 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;     
+}  
+.but7 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;   
+    margin-top: 25px;  
+}  
+.but8 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;     
+}  
+.but9 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;     
+}  
+.but10 button {
+    width: 280px;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent; 
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Плавное изменение фона */
+    border: transparent;
+    cursor: pointer;     
+}  
+   
+.osnova {
+    width: 1249px;
+    height: 706px;
+    margin-left: 496px;
+    margin-top: 185px;
+    position: absolute;
+    
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    transition: box-shadow 0.3s, transform 0.3s; /* Добавляем плавность анимации */
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    box-shadow: 0 0 150px #910fc5; /* Добавляем свечение вокруг карточек */
+    transform: scale(1.05); /* Увеличиваем карточки на 5% */
+}
+
+.card1 {
+    width: 303px;
+    height: 281px;
+    border-radius: 5px;
+    background-image: url(/img/card1.jpg) ;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    display: inline;
+    
+
+}
+
+.card2 {
+    width: 303px;
+    height: 281px;
+    border-radius: 5px;
+    margin-left: 473px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(/img/card2.jpg) ;
+    position: absolute;
+    display: inline;
+}
+
+.card3 {
+    width: 303px;
+    height: 281px;
+    border-radius: 5px;
+    margin-left: 946px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(/img/card3.jpg) ;
+    position: absolute;
+    display: inline;
+}
+
+.card4 {
+    width: 303px;
+    height: 281px;
+    border-radius: 5px;
+    margin-top: 466px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(/img/card4.jpg) ;
+    position: absolute;
+    display: inline;
+}
+
+.card5 {
+    width: 303px;
+    height: 281px;
+    border-radius: 5px;
+    margin-top: 466px;
+    margin-left: 473px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(/img/card5.jpg) ;
+    position: absolute;
+    display: inline;
+}
+
+.card6 {
+    width: 303px;
+    height: 281px;
+    border-radius: 5px;
+    margin-top: 466px;
+    margin-left: 946px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(/img/card6.jpg) ;
+    position: absolute;
+    display: inline;
+}
+
+
+.niz {
+    width: 1920px;
+    height: 75px;
+    margin-top: 1005px;
+    position: absolute;
+    border-top: 1px solid #8A8A8A;
+}
+
+
+footer {
+    z-index: 1; /* Устанавливаем z-index ниже, чем у left-bar */
+    
+}
+
+
+h5 {
+    font-size: 25px;
+    width: 121px;
+    height: 31px;
+    margin-left: 916px;
+    margin-top: 22px;
+    color: #8A8A8A;
+    display: block;
+    
+}
